@@ -14,6 +14,8 @@ let seattle = 	{
     avg : 6.3,
     numberOfCustomerEachHour: [],
     cookiesSoldEachHour : [],
+   total : 0,
+
 
     hourlyCustomer : function (){
         
@@ -26,15 +28,18 @@ let seattle = 	{
 
 
     hourlyCookiesSold : function (){
-    
         for(let i =0 ; i<workHours.length;i++){
             
             this.cookiesSoldEachHour.push (Math.floor( (this.numberOfCustomerEachHour[i]) * (this.avg)));
-            
+            this.total += this.cookiesSoldEachHour[i];
 
         }    
         
     },
+
+        
+    
+
 
     // render function
     render : function(){
@@ -50,10 +55,13 @@ let seattle = 	{
             ulEl.appendChild(liEl)
             liEl.textContent = workHours[i]+"  :  "+this.cookiesSoldEachHour[i]+"    cookies";
         }
-
+        let total= document.createElement('li');
+        ulEl.appendChild(total);
+         total.textContent= `total: ${this.total}`;
 
     }
 }
+
 
 seattle.hourlyCustomer();
 
@@ -68,6 +76,8 @@ let tokyo = 	{
      avg : 1.2,
      numberOfCustomerEachHour: [],
      cookiesSoldEachHour : [],
+     total : 0,
+
  
      hourlyCustomer : function (){
          
@@ -84,7 +94,8 @@ let tokyo = 	{
          for(let i =0 ; i<workHours.length;i++){
              
             this.cookiesSoldEachHour.push (Math.floor( (this.numberOfCustomerEachHour[i]) * (this.avg)));
-             
+            this.total += this.cookiesSoldEachHour[i];
+
  
          }    
          
@@ -102,9 +113,12 @@ let tokyo = 	{
              let liEl = document.createElement('li')
              ulEl.appendChild(liEl)
              liEl.textContent = workHours[i]+"  :  "+this.cookiesSoldEachHour[i]+"    cookies";
-         }
- 
- 
+             
+            }
+            let total= document.createElement('li');
+        ulEl.appendChild(total);
+         total.textContent= `total: ${this.total}`;
+
      }
  }
 
@@ -122,6 +136,8 @@ let tokyo = 	{
     avg : 3.7,
     numberOfCustomerEachHour: [],
     cookiesSoldEachHour : [],
+    total : 0,
+
 
     hourlyCustomer : function (){
         
@@ -138,7 +154,8 @@ let tokyo = 	{
         for(let i =0 ; i<workHours.length;i++){
             
             this.cookiesSoldEachHour.push (Math.floor( (this.numberOfCustomerEachHour[i]) * (this.avg)));
-            
+            this.total += this.cookiesSoldEachHour[i];
+
 
         }    
         
@@ -157,8 +174,12 @@ let tokyo = 	{
             let liEl = document.createElement('li')
             ulEl.appendChild(liEl)
             liEl.textContent = workHours[i]+"  :  "+this.cookiesSoldEachHour[i]+"    cookies";
+        
         }
 
+        let total= document.createElement('li');
+        ulEl.appendChild(total);
+         total.textContent= `total: ${this.total}`;
 
     }
 }
@@ -174,6 +195,8 @@ let Paris = 	{
     avg : 2.3,
     numberOfCustomerEachHour: [],
     cookiesSoldEachHour : [],
+    total : 0,
+
 
     hourlyCustomer : function (){
         
@@ -190,7 +213,8 @@ let Paris = 	{
         for(let i =0 ; i<workHours.length;i++){
             
             this.cookiesSoldEachHour.push (Math.floor( (this.numberOfCustomerEachHour[i]) * (this.avg)));
-            
+            this.total += this.cookiesSoldEachHour[i];
+
 
         }    
         
@@ -209,8 +233,13 @@ let Paris = 	{
             let liEl = document.createElement('li')
             ulEl.appendChild(liEl)
             liEl.textContent = workHours[i]+"  :  "+this.cookiesSoldEachHour[i]+"    cookies";
+
+
         }
 
+        let total= document.createElement('li');
+        ulEl.appendChild(total);
+         total.textContent= `total: ${this.total}`;
 
     }
 }
@@ -226,6 +255,7 @@ let Lima = 	{
     avg : 4.6,
     numberOfCustomerEachHour: [],
     cookiesSoldEachHour : [],
+    total : 0,
 
     hourlyCustomer : function (){
         
@@ -242,7 +272,8 @@ let Lima = 	{
         for(let i =0 ; i<workHours.length;i++){
             
             this.cookiesSoldEachHour.push (Math.floor( (this.numberOfCustomerEachHour[i]) * (this.avg)));
-            
+            this.total += this.cookiesSoldEachHour[i];
+
 
         }    
         
@@ -261,8 +292,12 @@ let Lima = 	{
             let liEl = document.createElement('li')
             ulEl.appendChild(liEl)
             liEl.textContent = workHours[i]+"  :  "+this.cookiesSoldEachHour[i]+"    cookies";
+
         }
 
+        let total= document.createElement('li');
+        ulEl.appendChild(total);
+         total.textContent= `total: ${this.total}`;
 
     }
 }
