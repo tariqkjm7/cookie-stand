@@ -1,0 +1,69 @@
+h1{
+    height: 250px;
+     text-align: center;
+   font-size: 150px;
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm_LJE6K1AUuMPfgBOfLD2PvxvasJlEYXjyQ&usqp=CAU");
+color: #E0C097;
+background-size: cover;
+
+}
+   
+
+
+#location{
+    background-image: url("https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/family.jpg?raw=true");
+    font-size: 50px;
+    background-size: 100% 100%;
+}
+#location h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#hours{
+    background-image: url("https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/salmon.png?raw=true");
+    font-size: 50px;
+    background-size: 100% 100%;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+#hours h2{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#contact{
+    background-image: url("https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/shirt.jpg?raw=true");
+    font-size: 50px;
+    background-size: 50% 100%;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+#contact div {
+    margin-top: 50px;
+}
+
+#sale{
+    background-image: url("https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/frosted-cookie.jpg?raw=true");
+    font-size: 50px;
+    background-size: 50% 100%;
+    padding-top: 100px;
+    text-align: center;
+
+}
+#sales{
+
+    margin-top: 100px;
+
+}
+
+footer{
+    background-image: url("https://github.com/LTUC/amman-irbid-201d35/blob/main/class-08/lab-b/assets/cutter.jpeg?raw=true");
+   
+    font-size: 50px;
+    background-size: auto;
+    text-align: center;
+margin-top: 100px;
+
+}
