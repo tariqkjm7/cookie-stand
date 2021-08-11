@@ -133,7 +133,6 @@ Branches.prototype.render = function () {
     totalOfTotal1+=this.total;
     
     
-    
 }
 
 
@@ -141,6 +140,26 @@ Branches.prototype.render = function () {
 for (let i = 0; i < branches.length; i++) {
     branches[i].render();
 }
-tableFooter();
 
 
+
+
+let form = document.getElementById('form')
+form.addEventListener('submit',addBranch)
+function addBranch (event){
+    event.preventDefault();
+    let name = event.target.name.value;
+    let minCust = event.target.minCust.value;
+    let maxCust = event.target.maxCust.value;
+    let avg = event.target.avg.value;
+   let newBranch =  new Branches (name,minCust,maxCust,avg )
+    {
+    newBranch.fillNumberOfCustomerEachHour();
+    newBranch.fillHourlyCookiesSold();
+    newBranch.render();
+
+    tableFooter();
+
+
+   }
+}
