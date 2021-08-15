@@ -133,6 +133,7 @@ Branches.prototype.render = function () {
     totalOfTotal1+=this.total;
     
     
+    
 }
 
 
@@ -140,6 +141,8 @@ Branches.prototype.render = function () {
 for (let i = 0; i < branches.length; i++) {
     branches[i].render();
 }
+
+tableFooter();
 
 
 
@@ -152,14 +155,15 @@ function addBranch (event){
     let minCust = event.target.minCust.value;
     let maxCust = event.target.maxCust.value;
     let avg = event.target.avg.value;
-   let newBranch =  new Branches (name,minCust,maxCust,avg )
+    let tableLeg = tableEl.rows.length-1;
+    tableEl.deleteRow(tableLeg);    
+    let newBranch =  new Branches (name,minCust,maxCust,avg )
     {
     newBranch.fillNumberOfCustomerEachHour();
     newBranch.fillHourlyCookiesSold();
     newBranch.render();
 
+    
     tableFooter();
-
-
-   }
+}
 }
