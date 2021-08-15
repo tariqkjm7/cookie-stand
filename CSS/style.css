@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 main{
   background-color: salmon;
-font-family: Georgia, 'Times New Roman', Times, serif;
-  
+  font-family: 'Oswald', sans-serif;  
 }
 
 table,
